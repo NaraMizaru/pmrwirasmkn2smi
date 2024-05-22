@@ -46,8 +46,8 @@
 
 Several quick start options are available:
 
--   Clone the repo: `git clone https://github.com/edikurniawan-dev/laravel-stisla.git`
--   Run `cd` to the newly created `/laravel-stisla` directory
+-   Clone the repo: `git clone https://github.com/NaraMizaru/pmrwirasmkn2smi.git`
+-   Run `cd` to the newly created `/pmrwirasmkn2smi` directory
 -   Run `composer install` command
 -   Run `npm install` command
 -   Run `npm run dev` command
