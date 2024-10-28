@@ -7,7 +7,7 @@ import BlurFade from "@/components/ui/blur-fade";
 
 const HeroSection = () => {
   return (
-    <section className="pt-40 pb-24 flex">
+    <section className="pt-44 pb-24 flex">
       <div className="container">
         <div className="flex flex-wrap">
           <div className="w-full self-center px-4 lg:w-1/2 lg:order-2">

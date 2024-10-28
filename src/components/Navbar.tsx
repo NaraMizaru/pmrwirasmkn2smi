@@ -16,7 +16,7 @@ import navItem from "@/lib/navItem";
 const Navbar = () => {
   return (
     <nav className="fixed left-0 top-0 z-50 w-full px-5">
-      <div className="z-50 mx-auto mt-5 h-[105px] w-full rounded-base border-2 border-border bg-main px-5 text-text dark:border-darkBorder w400:h-[unset] w400:flex-col w400:gap-3 w400:py-3">
+      <div className="z-50 mx-auto mt-5 sm:h-[120px] md:h-[105px] w-full rounded-base border-2 border-border bg-main px-5 text-text dark:border-darkBorder  ">
         <div className="flex items-center justify-between border-b-border border-b-2">
           <div className="my-1 flex">
             <p className="mx-1">3</p>
@@ -40,6 +40,7 @@ const Navbar = () => {
             </h3>
             <h3 className="text-3xl font-bold block lg:hidden">PMR Wira</h3>
             <p>SMK Negeri 2 Sukabumi</p>
+            {/* <p>SMEA</p> */}
           </a>
 
           <div className="flex items-center text-lg w500:text-base w400:text-sm">
@@ -48,13 +49,13 @@ const Navbar = () => {
                 navItem.links.map((link, i) =>
                   link.isDropdown ? (
                     <DropdownMenu key={i}>
-                      <DropdownMenuTrigger className="mr-10 w400:mr-7">
+                      <DropdownMenuTrigger className="mr-10">
                         {link.label}
                       </DropdownMenuTrigger>
                       <DropdownMenuContent align="end">
                         <DropdownMenuLabel>{link.label}</DropdownMenuLabel>
                         <DropdownMenuSeparator />
-                        {link.dropdownItems &&
+                        {link.dropdownItems &&  
                           link.dropdownItems.map((item, i) => (
                             <Link href={item.href} key={i}>
                               <DropdownMenuItem>{item.title}</DropdownMenuItem>
@@ -63,7 +64,7 @@ const Navbar = () => {
                       </DropdownMenuContent>
                     </DropdownMenu>
                   ) : (
-                    <Link key={i} className="mr-10 w400:mr-7" href={link.href}>
+                    <Link key={i} className="mr-10" href={link.href}>
                       {link.label}
                     </Link>
                   )
